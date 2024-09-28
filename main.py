@@ -350,13 +350,13 @@ async def account_login(bot: Client, m: Message):
         CR = raw_text3
 
     await editable.edit("**irst Name or send `op` for use default**")
-    input9: Message = await bot.listen(editable.chat.id)
-    raw_text9 = input9.text
-    await input9.delete(True)
-    if raw_text9 == 'op':
-        OP = "@TEAM_OPTECH"
+    input14: Message = await bot.listen(editable.chat.id)
+    raw_text14 = input14.text
+    await input14.delete(True)
+    if raw_text14 == 'op':
+        OP = "HACKHEIST"
     else:
-        OP = raw_text9
+        OP = raw_text14
 
 
     await editable.edit("**🖼 Thumbnail \n\n• Custom Thumbnail : Use @vtelegraphbot and send me link \n• If you don't want Send :  `no` **")  
@@ -422,7 +422,7 @@ async def account_login(bot: Client, m: Message):
 
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip() 
-            name = f'{OP} {CR} {name1[:60]}'
+            name = f'HACKHEIST_{CR}_{name1[:60]}'
 
             if "/master.mpd" in url :
                 if "https://sec1.pw.live/" in url:
