@@ -523,7 +523,7 @@ async def account_login(bot: Client, m: Message):
                     
 
             except Exception as e:
-                await m.reply_text(f"**<a herf="{url}>{name1}<\a>**")
+                await m.reply_text(f"Failed to dowmload 🙏🙏\n\n**<a herf="{url}>{name1}<\a>**")
                 failed_links.append(f"{name1} : {url}")
                 count += 1
                 continue
